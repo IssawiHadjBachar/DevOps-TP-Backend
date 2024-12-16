@@ -10,7 +10,7 @@ pipeline {
 
     stage('Build Docker Image') {
       steps {
-        sh 'docker build -t issawi/backend:latest .'
+        sh 'docker build -t issawi/back:latest .'
       }
     }
 
