@@ -18,7 +18,7 @@ pipeline {
       steps {
         withCredentials([string(credentialsId: 'dockerhub-token', variable: 'DOCKER_TOKEN')]) {
           sh 'echo "$DOCKER_TOKEN" | docker login -u issawi --password-stdin'
-          sh 'docker push issawi/backend:latest'
+          sh 'docker push issawi/back:latest'
         }
       }
     }
